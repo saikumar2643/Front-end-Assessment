@@ -97,3 +97,17 @@
   opacity: 0.5;
   cursor: pointer;
 }
+
+.tag {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px;
+  width: fit-content;
+  background-color: lightgrey;
+  border-radius: 4px;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
