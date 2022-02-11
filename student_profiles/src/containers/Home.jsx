@@ -58,7 +58,7 @@ function Home() {
 
     useEffect(() => {
         setFilteredStudents(students.filter(s => {
-            return s.firstName.includes(filter.name) || s.lastName.includes(filter.name)
+            return (s.firstName.includes(filter.name) || s.lastName.includes(filter.name)) && (filter.tag.length ? (s.tags && s.tags.find(str => str.includes(filter.tag))) !==undefined : true)
         }))
 
     }, [filter])
