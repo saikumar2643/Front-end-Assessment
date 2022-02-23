@@ -1,0 +1,32 @@
+.student-container {
+    background-color: whitesmoke;
+    width: 80%;
+    height: 80%;
+}
+  
+.student-main {
+    background-color: white;
+    text-align: left;
+    border-radius: 12px;
+    grid-area: content;
+    max-height: 90vh;
+    overflow-y: auto;
+    border: 1px solid lightgrey;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+}
+
+.student-main-container {
+    display: grid;
+    grid-template-columns: min-content 33% 1fr 1fr 1fr;
+    grid-template-rows: min-content, 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      "avatar name name name expandBtn"
+      "avatar content content . ."
+      ". content content . ."
+      ". tags tags . .";
+    padding: 16px;
+    border-bottom: 1px solid lightgrey;
+    position: relative;
+}
